@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1050.0" style="-fx-background-image: url(/image/41199857_1898308413570903_7169170959650258944_o.jpg); -fx-background-size: 1050, 700;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csku.projectsoftwareconstruction.controller.CourseCollegeYearController">
+    <children>
+        <Label layoutX="19.0" layoutY="17.0" prefHeight="30.0" prefWidth="120.0" text="Student ID :" />
+        <Label layoutX="505.0" layoutY="19.0" prefHeight="30.0" prefWidth="120.0" text="Name :" />
+        <TextField fx:id="studentID" editable="false" layoutX="177.0" layoutY="16.0" prefHeight="30.0" prefWidth="150.0" />
+        <TextField fx:id="studentName" editable="false" layoutX="651.0" layoutY="18.0" prefHeight="30.0" prefWidth="150.0" />
+      <TableView fx:id="collegeYearCourseTableView" layoutX="125.0" layoutY="79.0" prefHeight="450.0" prefWidth="840.0" AnchorPane.topAnchor="80.0">
+        <columns>
+          <TableColumn fx:id="courseIDColumn" editable="false" prefWidth="120.0" text="ID" />
+            <TableColumn fx:id="titleColumn" editable="false" prefWidth="120.0" text="TITLE" />
+            <TableColumn fx:id="creditColumn" editable="false" prefWidth="120.0" text="CREDIT" />
+            <TableColumn fx:id="yearColumn" editable="false" prefWidth="120.0" text="YEAR" />
+            <TableColumn fx:id="difficultLevelColumn" editable="false" prefWidth="120.0" text="DIFFICULT" />
+            <TableColumn fx:id="passColumn" editable="false" prefWidth="120.0" text="PASS" />
+            <TableColumn fx:id="prereqColumn" editable="false" prefWidth="120.0" text="PREREQ" />
+        </columns>
+      </TableView>
+      <Button fx:id="passBtn" layoutX="337.0" layoutY="543.0" mnemonicParsing="false" onAction="#selectCourseToPassHandlerAction" prefHeight="30.0" prefWidth="80.0" text="Pass" />
+      <Button fx:id="viewCourseDetailBtn" layoutX="425.0" layoutY="543.0" mnemonicParsing="false" onAction="#viewCourseDetailBtnHandlerAction" prefHeight="30.0" prefWidth="80.0" text="View" />
+      <TextField fx:id="courseIdSearch" layoutX="177.0" layoutY="545.0" prefHeight="25.0" prefWidth="150.0" promptText="Course ID" />
+      <TextArea fx:id="courseDetailTextArea" editable="false" layoutX="525.0" layoutY="545.0" prefHeight="125.0" prefWidth="350.0" promptText="Course Details" />
+      <Button fx:id="logoutBtn" layoutX="835.0" layoutY="19.0" mnemonicParsing="false" onAction="#logoutBtnHandlerAction" prefHeight="30.0" prefWidth="80.0" text="Logout" />
+      <Button fx:id="backPageBtn" layoutX="59.0" layoutY="640.0" mnemonicParsing="false" onAction="#backPageBtnHandlerAction" prefHeight="30.0" prefWidth="80.0" text="&lt;&lt; Back" />
+    </children>
+
+</AnchorPane>

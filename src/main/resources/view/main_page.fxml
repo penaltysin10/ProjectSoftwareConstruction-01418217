@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url(/image/41199857_1898308413570903_7169170959650258944_o.jpg); -fx-background-size: 600, 400;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csku.projectsoftwareconstruction.controller.MainPageController">
+   <children>
+      <Label layoutX="142.0" layoutY="215.0" prefHeight="30.0" prefWidth="70.0" text="Student ID :" />
+      <TextField fx:id="studentID" layoutX="227.0" layoutY="215.0" prefHeight="30.0" prefWidth="200.0" />
+      <Button fx:id="loginBtn" layoutX="252.0" layoutY="291.0" mnemonicParsing="false" onAction="#loginBtnHandlerAction" prefHeight="35.0" prefWidth="100.0" text="Login" />
+      <ImageView fitHeight="145.0" fitWidth="173.0" layoutX="252.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/900px-KU_SubLogo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
